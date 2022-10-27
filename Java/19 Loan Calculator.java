@@ -29,5 +29,14 @@
 
 public class LoanCalculator{
   public static void main(String[] args){
+      double starting_amount = 20000;
+      double current_amount = starting_amount;
+
+      for(int i = 0; i < 3; i++){
+            current_amount = pay_bills(current_amount);
+      }
+
+      System.out.print(current_amount);
   }//main
 }//LoanCalculator
+
