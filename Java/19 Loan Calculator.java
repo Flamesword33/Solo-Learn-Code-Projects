@@ -38,5 +38,11 @@ public class LoanCalculator{
 
       System.out.print(current_amount);
   }//main
+
+  public static double pay_bills(double amount_left_to_pay){
+      double payment = amount_left_to_pay / 10;
+      return amount_left_to_pay - payment;
+  }//pay_bills
+
 }//LoanCalculator
 
